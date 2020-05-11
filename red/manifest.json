@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "red",
+  "version": "0.0.1",
+
+  "description": "Red Extension",
+
+  "icons": {
+    "48": "red.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "red@moz.org"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "red.png"
+  },
+
+  "permissions": [
+    "<all_urls>"
+  ]
+}

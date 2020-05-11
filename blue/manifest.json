@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "blue",
+  "version": "0.0.1",
+
+  "description": "Blue Extension",
+
+  "icons": {
+    "48": "blue.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "blue@moz.org"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "blue.png"
+  },
+
+  "permissions": [
+    "<all_urls>"
+  ]
+}
