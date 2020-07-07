@@ -6,8 +6,9 @@ browser.browserAction.onClicked.addListener(() => {
   console.log('BLUE: sending msg');
   browser.runtime.sendMessage(
     "red@moz.org",
-    "message from blue"
-  );
+    "message from blue",
+    null
+  ).then( () => console.log('BLUE: message sent properly'));
 });
 
 
